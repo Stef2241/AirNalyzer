@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESP32 BT Live</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>ESP32 Bluetooth Live Monitor</h1>
+    <p>Site local – date în timp real prin Bluetooth (COM) → Flask → SSE</p>
+  </header>
+
+  <section class="controls">
+    <button id="btn-reload">Reîncarcă</button>
+    <button id="btn-clear">Șterge log</button>
+    <span id="status">Status: conectare...</span>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Valori curente (snapshot)</h2>
+      <table id="snapshot">
+        <thead>
+          <tr><th>Cheie</th><th>Valoare</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Log live</h2>
+      <pre id="log" class="log"></pre>
+    </div>
+  </section>
+
+  <footer>
+    <small>Rulează pe <code>http://localhost:5000</code>. Endpoint-uri utile: <code>/api/latest</code>, <code>/api/ports</code>, <code>/stream</code>.</small>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
