@@ -1,2 +1,3 @@
-Acum este 22.08 ora 23.57 ok rebeca?
-
+Forta Steaua Bucuresti!
+Il iubim pe Coxi, iesim la bere!
+FAKKKK YAAAAAh!!
